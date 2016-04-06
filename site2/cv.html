@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Julien AuBe</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="./css/style.css" media="screen" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.smooth').on('click', function() {
+          var page = $(this).attr('href');
+          var speed = 1000;
+          $('html, body').animate( { scrollTop: $(page).offset().top }, speed );
+          return false;
+        });
+      });
+    </script>
+    <script>
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        var size = window.innerHeight;
+
+        if (((size*2.9)>scroll && scroll > size) || (size*6.7)>scroll && scroll > (size*4.8) ){
+            $("li").addClass("liwhite");
+            $("ul li a").addClass("ulliadark");
+        } else {
+            $("li").removeClass("liwhite");
+            $("ul li a").removeClass("ulliadark");
+        }
+    });
+  </script>
+  </head>
+  <body>
+
+    <ul class="menu">
+        <li><a class="smooth" href="#page-0"><p>Profil</p></a></li>
+        <li><a class="smooth" href="#page-etu"><p>Études</p></a></li>
+        <li><a class="smooth" href="#page-exp"><p>Expérience</p></a></li>
+        <li><a class="smooth" href="#page-com"><p>Compétences</p></a></li>
+        <li><a class="smooth" href="#page-contact"><p>Contact</p></a></li>
+    </ul>
+    <div class="back-white" >
+      <div class="cv">
+
+          <div class="cv1"><p>Julien AB.</p></div>
+		      <div class="cv2">
+            <p>
+                Programmeur &middot&nbsp Web Developper &middot&nbsp Designer
+            </p>
+          </div>
+          <div class="cv3" id="page-0">
+            <p>
+              Étudiant de 18 ans dans le secteur de l'informatique, je suis attiré par la programmation et le développement.</br>
+              Ne m'arrêtant pas à cela, je pratique également le dessin traditionnel et digital.</br>
+              Je me tiens également au courant des innovations ayant lieu dans le secteurs de la High-Tech ou des jeux vidéo qui deviennent de plus en plus complexes.
+            </p>
+          </div>
+      </div>
+    </div>
+    <div class="back-black">
+      <div class="etudes">
+
+        <div class="title" id="page-etu">Études</div>
+        <div class="etudesbox" id="etubox1">
+          <p>
+            Etudiant depuis <b>septembre 2015</b> en première année de DUT informatique à Nantes.</br>
+          </p>
+        </div>
+        <div class="etudesbox" id="etubox2">
+          <p>
+            En <b>juin 2015</b>, j'obtins mon bac scientifique, option sciences de l'ingénieur au lycée François Truffaut à Challans.
+          </p>
+        </div>
+        <div class="timeline" id="etu"></div>
+        <div class="date" id="date2016"><p>2016</p></div>
+        <div class="date" id="date2015"><p>2015</p></div>
+      </div>
+
+    </div>
+    <div class="back-white">
+      <div class="experience" >
+        <div class="title" id="page-exp">
+          Expérience
+        </div>
+        <div class="timeline" id="exp"></div>
+        <div class="circle"></div>
+        <div class="expboxarrow" id="expbox1"></div>
+        <div class="expbox" id="expbox1">
+          <p>
+            <b>Décembre 2011</b>	</br><br> Stage découverte à l'Espace Diderot, médiathèque de Challans, d'une durée de 5 jours. Les fonctions effectuées furent l'accueil, le tri, le rangement, la gestion des abonnements ainsi que l'utilisation du logiciel de prêts et rendus.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="back-black">
+      <div class="competences">
+        <div class="title" id="page-com">Compétences</div>
+
+        <div id="boxcompetence">
+        	<div class="boxcompetence" id="combox1">
+        		<div id="boxcompetence-img"><div id="img1"></div></div>
+        		<div class="boxcompetence-content">
+        			<p>50%</p>
+        		</div>
+        	</div>
+        </div>
+
+        <div id="boxcompetence">
+          <div class="boxcompetence" id="combox2">
+            <div id="boxcompetence-img"><div id="img2"></div></div>
+            <div class="boxcompetence-content">
+              <p>25%</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="boxcompetence">
+          <div class="boxcompetence" id="combox3">
+            <div id="boxcompetence-img"><div id="img3"></div></div>
+            <div class="boxcompetence-content">
+              <p>15%</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="boxcompetence">
+          <div class="boxcompetence" id="combox4">
+            <div id="boxcompetence-img"><div id="img4"></div></div>
+            <div class="boxcompetence-content">
+              <p>60%</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="boxcompetence">
+          <div class="boxcompetence" id="combox5">
+            <div id="boxcompetence-img"><div id="img5"></div></div>
+            <div class="boxcompetence-content">
+              <p>30%</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="boxcompetence">
+          <div class="boxcompetence" id="combox6">
+            <div id="boxcompetence-img"><div id="img6"></div></div>
+            <div class="boxcompetence-content">
+              <p>5%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="back-white">
+      <div class="contact" id="page-contact">
+        <div class="title" id="contact">Contact</div>
+        <form action="MAILTO:julienaubeb@gmail.com" method="post" enctype="text/plain">
+          <input type="text" name="adresse" id="adresse" placeholder="Votre adresse." maxlength="75">
+          <input type="text" name="sujet" id="sujet" placeholder="Votre titre." maxlength="150">
+          <textarea name="message" placeholder="Votre message."></textarea>
+          <input type="submit" name="send" id="send" value="Ok">
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">
+      2016 - Julien Aubert-Béduchaud. All right reserved.
+    </div>
+  </body>
+</html>
