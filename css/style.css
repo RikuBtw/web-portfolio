@@ -60,6 +60,10 @@ img{
   width: calc( (35vh + 35vw) / 2);
   background-color: #fff;
   border-radius: 2%;
+  box-shadow: 8px 8px 10px #555;
+  -o-transition: height 0.3s ease, width 0.3s ease;
+  -moz-transition: height 0.3s ease, width 0.3s ease;
+  -webkit-transition: height 0.3s ease, width 0.3s ease;
   transition: height 0.3s ease, width 0.3s ease;
 }
 
