@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+}
+
+h1{
+  position: absolute;
+  font-family: "Rockwell";
+  font-size: calc( (7vh + 7vw) / 2);
+  color: #fff;
+  top:50%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+
+
+}
+
+p{
+  position: absolute;
+
+  font-family: "Century Gothic";
+  text-align: center;
+  top:15%;
+  margin-left: 50%;
+  transform: translate(-50%, -15%);
+
+
+}
+
+img{
+  position: relative;
+  height: 95%;
+  width: 95%;
+  max-height: 100%;
+  max-width: 100%;
+  top:50%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.titlecontainer{
+  height: 30vh;
+  width: 100%;
+  position: absolute;
+  background-color: #ffa500;
+}
+
+.sitecontainer{
+  position: absolute;
+  top:100%;
+  height: 70vh;
+  width: 100%;
+  background-color: #bbb ;
+  border-top: 2vh solid #fff;
+  transform: translateY(-100%);
+}
+
+.sitebox{
+  position: absolute;
+  height: calc( (25vh + 25vw) / 2);
+  width: calc( (35vh + 35vw) / 2);
+  background-color: #fff;
+  border-radius: 2%;
+  transition: height 0.3s ease, width 0.3s ease;
+}
+
+.sitebox:hover{
+  height: calc( (27.5vh + 27.5vw) / 2);
+  width: calc( (38.5vh + 38.5vw) / 2);
+}
+
+.sitebox#sitebox1{
+  top:70%;
+  margin-left: 25%;
+  transform :translate(-25%,-70%);
+}
+.sitebox#sitebox2{
+  top:70%;
+  margin-left: 75%;
+  transform :translate(-75%,-70%);
+}
